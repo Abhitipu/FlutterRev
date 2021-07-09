@@ -26,6 +26,7 @@ class MyHomePage extends StatefulWidget {
   final String title;
 
   MyHomePage({Key key, this.title}) : super(key: key);
+  // Key is for uniquely identifying the widget (useful for situations like reordering)
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
