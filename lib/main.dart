@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 // this is imported so that we maty use the material edsign toolkit
 // Widget : Element :: class : class_instance
 
-void main() => runApp(new MyApp());
+void main() => runApp(new MyNewApp());
 
 class MyApp extends StatelessWidget {
   // the build method always has to be overriden
@@ -70,6 +70,41 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
+  }
+}
+
+class MyNewApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: "My awesome flutter app",
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: Scaffold(
+          appBar: AppBar(
+            title: Text("Hello world!"),
+          ),
+          body: Center(
+              child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Image(
+                image: AssetImage("images/abhitipu.jpg"),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Text("Abhinandan"),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Text("Flutter Developer"),
+              ),
+            ],
+          )),
+          backgroundColor: Colors.pink[50],
+        ));
   }
 }
 
