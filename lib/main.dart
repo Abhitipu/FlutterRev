@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-      // necessary to claa setState to re run the build method to reflect changes
+      // necessary to call setState to re run the build method to reflect changes
       _counter++;
     });
   }
@@ -72,3 +72,12 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+/*
+Scaffold: just a screen
+A widget has different properties that youcan specify
+eg : Scaffold has 
+      1. appbar
+      2. Body
+      3. Floating action button etc.
+*/
